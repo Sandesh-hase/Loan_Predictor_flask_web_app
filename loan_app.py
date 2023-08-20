@@ -11,7 +11,7 @@ clf = pickle.load(model)
 
 @app.route("/")
 def welcome():
-    return "<h1>Welcome...!!, </h1>" "<p>Please nevigate to **ping page**</p>"
+    return "<h1>Welcome...!!, </h1>" "<p>Please nevigate to ping page</p>"
 
 
 @app.route("/ping")
