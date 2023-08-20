@@ -16,7 +16,9 @@ def welcome():
 
 @app.route("/ping")
 def load_model():
-    return "<h1>Loading the model. Please wait</h1>"
+
+    return "<h1>Loading the model. Please wait</h1>" "<h1>Please send post request to predict the results</h1>"
+
 
 
 @app.route("/predict", methods=["POST"])
