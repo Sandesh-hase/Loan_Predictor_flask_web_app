@@ -11,12 +11,14 @@ clf = pickle.load(model)
 
 @app.route("/")
 def welcome():
-    return "<h1>Welcome...!!, </h1>" "<p>Please nevigate to ping page</p>"
+    return "<h1>Welcome...!!, </h1>" "<p>Please nevigate to ping or predict page</p>"
 
 
 @app.route("/ping")
 def load_model():
-    return "<h1>Loading the model, Please send post request to predict the results</h1>"
+
+    return "<h1>Loading the model. Please wait</h1>" "<h1>Please send post request to predict the results</h1>"
+
 
 
 @app.route("/predict", methods=["POST"])
